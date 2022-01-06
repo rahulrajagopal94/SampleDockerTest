@@ -23,7 +23,7 @@ namespace SampleDocker.TestScript
         {
             var options = new ChromeOptions();
             var remoteUrl = "http://localhost:4444/wd/hub";
-            var driver = new RemoteWebDriver(new Uri(remoteUrl), options);
+            driver = new RemoteWebDriver(new Uri(remoteUrl), options);
        //     driver = new ChromeDriver(GetAbsoluteFilePath("WebDrivers"));
             driver.Navigate().GoToUrl("https://demo.openmrs.org/openmrs/");
         }
