@@ -21,7 +21,7 @@ namespace SampleDocker.Pages
             Thread.Sleep(5000);          
             try
             {
-                string actualUrl = "https://demo.openmrs.org/openmrs/referenceapplication/home.page";
+                string actualUrl = "https://demo.openmrs.org/openmrs/";
                 string expectedUrl = driver.Url;
                 Console.WriteLine(expectedUrl);
                 Assert.AreEqual(expectedUrl, actualUrl);
